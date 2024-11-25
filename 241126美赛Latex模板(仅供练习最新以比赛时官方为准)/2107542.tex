@@ -1,0 +1,421 @@
+\documentclass[12pt]{article}  %字体
+\usepackage[table]{xcolor}%把这个宏包放在最前面就不会和problem报错了
+\usepackage[bianhao??]{easymcm}  % 载入 EasyMCM 模板文件
+\problem{ABCDEF}  % 题号
+\usepackage{newtxtext} 
+\usepackage{pdfpages}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{listings}
+\usepackage{paralist}
+\usepackage{setspace}
+
+
+ \let\itemize\compactitem
+ \let\enditemize\endcompactitem
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
+\title{biaoti??zijidehua}  
+
+
+
+\begin{document}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\begin{abstract}%摘要最后写
+	
+	
+	With the development of ..., the xx problem has become a hot topic in the paper. In order to solve the ... problem, this paper establishes/utilizes the
+	... model and solves to obtain .... 
+	%首段：背景，原因，目的
+	
+	In \textsc{TASK 1}, we...
+	%中间段：模型算法过程+关键参数值+解决了什么问题意义
+	%\textsc{},\textbf{}黑体，\textit{}斜体
+				
+	Finally, we conduct a sensitivity analysis in order to gain some deep understanding of our model. Additionally, we analyze the strengths and weaknesses of our model.
+	
+	
+	\vspace{5pt}
+	\textbf{Keywords}: ...%模型名称+关键东西
+	
+\end{abstract}
+    
+\maketitle  % 生成 Summary Sheet
+
+\tableofcontents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Introduction}
+
+\subsection{Problem Background}
+Music...%赛题的补充，写完正文和摘要再写
+\upcite{ref1}%参考文献右上角标注
+
+%语法：首项黑点儿：
+%\begin{itemize}
+%	\setlength{\parsep}{0ex} %段落间距
+%	\setlength{\topsep}{2ex} %列表到上下文的垂直距离
+%	\setlength{\itemsep}{1ex} %条目间距
+%	\item ...
+%\end{itemize}
+
+\subsection{Restatement of the Problem}
+Considering the background information and restricted conditions identified in the problem statement/As we have a data set containing the..., we need to build mathematical models to solve the following problems for ...:
+
+%语法：首项数字与字母序号：
+%\begin{enumerate}[\bfseries 1.]
+%	\setlength{\parsep}{0ex} %段落间距
+%	\setlength{\topsep}{2ex} %列表到上下文的垂直距离
+%	\setlength{\itemsep}{1ex} %条目间距
+%	\item ...
+%\end{enumerate}
+
+
+
+\begin{enumerate}[\bfseries 1.]
+	\setlength{\parsep}{0ex} %段落间距
+	\setlength{\topsep}{2ex} %列表到上下文的垂直距离
+	\setlength{\itemsep}{1ex} %条目间距
+	\item \textbf{Problem 1}: ...
+	\item \textbf{Problem 2}: ...
+\end{enumerate}
+
+
+
+
+
+\subsection{Our work}
+To achieve our goal, we need to:
+
+\begin{itemize}
+	\setlength{\parsep}{0ex} %段落间距
+	\setlength{\topsep}{2ex} %列表到上下文的垂直距离
+	\setlength{\itemsep}{1ex} %条目间距
+	\item ...
+	\item ...
+\end{itemize}
+
+Our modeling framework can be illustrated as shown in Figure ? below.
+%流程图
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Assumptions and Notations}
+\subsection{Assumptions and Explanations}
+Considering those practical problems always contain many complex factors, first of all, we need to make reasonable assumptions to simplify the model, and each hypothesis is closely followed by its corresponding explanation:
+\begin{itemize}
+	\setlength{\parsep}{0ex} %段落间距
+	\setlength{\topsep}{2ex} %列表到上下文的垂直距离
+	\setlength{\itemsep}{1ex} %条目间距
+	\item Assumption 1: The data provided in this problem is valid and reliable.
+	\item Explanations:
+	\item Assumption 2: There's no maximum/minimum xx limit for..
+	\item Explanations:
+	\item Assumption 3: The xx factors can be ignored./The xx does not influence xx.
+	\item Explanations:
+	\item Assumption 4: We do not ...
+	\item Explanations:
+	\item Assumption 5: The xx is the xx.
+	\item Explanations:
+	\item Assumption 6: xx and xx do not affect each other.
+	\item Explanations:
+\end{itemize}
+
+
+
+\subsection{Notations}
+In this work, we use the nomenclature in Table 1 in the model construction. Other none-frequent-used symbols will be introduced once they are used.
+
+
+%语法：三线表
+%\begin{table}[H]
+%	\centering
+%	\begin{tabular}{ll}%这个竖线就是那个竖线，加不加自己看
+%		\hline
+%		\rowcolor{green!30}%给后面那行加颜色
+%		a & b\\ \hline
+%		c  & the   \\
+%		 & \\
+%		 &  \\                   
+%		\hline
+%	\end{tabular}
+%	\caption{mingzi}
+%\end{table}
+
+
+\begin{table}[H]%只有重点变量
+	\centering
+	\begin{tabular}{ll}
+		\hline
+		\rowcolor{green!30}
+		\multicolumn{1}{c}{\textbf{Notations}} & \textbf{Definitions}\\ \hline
+		$p_{ij}$                      & the \\
+		                    
+		\hline
+	\end{tabular}
+	\caption{Notations Table}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Data Description}
+\subsection{Data Collection}
+
+
+
+\subsection{Date Pre-processing}
+The data we use includes the data files given as \textbf{mingzi}.
+
+Since we are only allowed to use this data set provided by timudeofficial, we need to pre-process the data for the datasets before solving the problem.
+
+Notice that there are...
+
+To facilitate the follow-up process, and to ensure the reliability and reasonableness of the data, we take (the average of the prices of the two trading days before and after each trading day with missing gold price as the gold price of that day.The trading days eith missing gold price and their corrected gold prices )are shown in the table below:
+
+
+
+\subsection{Data Visualization}
+
+
+
+\subsection{Descriptive Statistical Anaalysis of the Data}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Task1: Network Model}%简洁
+\subsection{Network for influence}
+
+
+%语法：符号下标：eg a11 a_{11}
+%语法：横省略号：\cdots竖省略号：\vdots斜省略号：\ddots
+%语法：矩阵写法：
+%\begin{equation}
+%\begin{pmatrix}
+%a_{11}&a_{12}&\cdots&a_{1n}\\
+%a_{21}&a_{22}&\cdots&a_{2n}\\
+%\vdots&\vdots&\ddots&\vdots\\
+%a_{n1}&a_{n2}&\cdots&a_{nn}\\
+%\end{pmatrix}
+%\end{equation}
+
+%语法：变量斜体：$a_{ij}$
+
+
+
+%语法：插入图片。需将图片放在tex同路径文件夹中
+%\begin{figure}[H]
+%	\centering    
+%	\subfigure[organization1]{				% 图片1([]内为子图标题)		
+%		\includegraphics[height=xcm,width=0.3\textwidth]{network1.png}}% 子图1的相对位置
+%	\subfigure[organization2]{				% 图片		
+%		\includegraphics[height=xcm,width=0.3\textwidth]{organization.png}}% 子图2的相对位置
+%	\caption{Organization}		% 总图标题
+%\end{figure}
+
+
+%语法：公式
+%\begin{equation}
+%p_{ij}=\frac{| T_j|  }{\Sigma_{\alpha : \text{i follows $\alpha$} } T_{j}}\cdot %sim_{ij} 
+%\end{equation}
+
+%真的想打符号：前面加个斜杠\&
+
+%一种数字化写法：$\mathcal{P}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Sensitivity Analysis}
+In Task 1, we introduce the attenuation coefficient  and assign it a value of 0.5 in order to measure the effect of indirect influence in the influence network, and now we do a sensitivity test on the attenuation coefficient $\mathcal{P}$.
+%图片
+From the figure we can find that there is no large change in the influence when $\mathcal{P}$ is taken at [0.1,0,8]. Therefore, our model is insensitive to $\mathcal{P}$ in most cases.
+
+
+
+
+\section{Conclusion}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Strengths and Weaknesses}
+%可分模型写
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+%参考文献写法
+\begin{thebibliography}{99}
+	\bibitem{ref1} Wang, Z. (1983). Cause Analysis of Maui Fire in Hawaii Based on Remote Sensing. Shandiyanjiu.
+
+\end{thebibliography}
+
+
+
+
+
+
+\end{document}
